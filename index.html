@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GitHub Profile README Generator</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="app-title">GitHub Profile Generator</h1>
+    <p class="subtitle">Generate your perfect GitHub profile README in seconds</p>
+
+    <div class="main-layout">
+
+      <!-- FORM -->
+      <div class="form-panel">
+
+        <div class="section-card">
+          <h3>Basic Info</h3>
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" id="name" placeholder="Kishalaya Sarangi" oninput="generate()"/>
+          </div>
+          <div class="form-group">
+            <label>Title / Role</label>
+            <input type="text" id="title" placeholder="B.Tech Mechanical | NIT Rourkela" oninput="generate()"/>
+          </div>
+          <div class="form-group">
+            <label>About Me (one line)</label>
+            <input type="text" id="about" placeholder="Passionate about tech and building things" oninput="generate()"/>
+          </div>
+          <div class="form-group">
+            <label>GitHub Username</label>
+            <input type="text" id="github" placeholder="kishalayasarangi" oninput="generate()"/>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="text" id="email" placeholder="sarangikishalaya70@gmail.com" oninput="generate()"/>
+          </div>
+          <div class="form-group">
+            <label>LinkedIn URL (optional)</label>
+            <input type="text" id="linkedin" placeholder="linkedin.com/in/yourname" oninput="generate()"/>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <h3>Currently</h3>
+          <div class="form-group">
+            <label>Working on</label>
+            <input type="text" id="workingOn" placeholder="120 Days of Code Challenge" oninput="generate()"/>
+          </div>
+          <div class="form-group">
+            <label>Learning</label>
+            <input type="text" id="learning" placeholder="Python, JavaScript, Web Development" oninput="generate()"/>
+          </div>
+          <div class="form-group">
+            <label>Looking for</label>
+            <input type="text" id="lookingFor" placeholder="Internships and collaboration opportunities" oninput="generate()"/>
+          </div>
+          <div class="form-group">
+            <label>Fun fact</label>
+            <input type="text" id="funFact" placeholder="I push code to GitHub every single day!" oninput="generate()"/>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <h3>Skills (check all that apply)</h3>
+          <div class="skills-grid" id="skillsGrid">
+            <label><input type="checkbox" value="Python" onchange="generate()"/> Python</label>
+            <label><input type="checkbox" value="JavaScript" onchange="generate()"/> JavaScript</label>
+            <label><input type="checkbox" value="C++" onchange="generate()"/> C++</label>
+            <label><input type="checkbox" value="HTML5" onchange="generate()"/> HTML</label>
+            <label><input type="checkbox" value="CSS3" onchange="generate()"/> CSS</label>
+            <label><input type="checkbox" value="React" onchange="generate()"/> React</label>
+            <label><input type="checkbox" value="Node.js" onchange="generate()"/> Node.js</label>
+            <label><input type="checkbox" value="Git" onchange="generate()"/> Git</label>
+            <label><input type="checkbox" value="Linux" onchange="generate()"/> Linux</label>
+            <label><input type="checkbox" value="MySQL" onchange="generate()"/> MySQL</label>
+            <label><input type="checkbox" value="MongoDB" onchange="generate()"/> MongoDB</label>
+            <label><input type="checkbox" value="Docker" onchange="generate()"/> Docker</label>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- PREVIEW -->
+      <div class="preview-panel">
+        <div class="preview-header">
+          <h3>Generated README</h3>
+          <button class="btn-copy" onclick="copyMarkdown()" id="copyBtn">📋 Copy Markdown</button>
+        </div>
+        <pre class="markdown-output" id="markdownOutput">Fill in the form to generate your README...</pre>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>Day 20 of 120 · Kishalaya Sarangi · NIT Rourkela</footer>
+  <script src="script.js"></script>
+</body>
+</html>
